@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/fondo.jpg);
+    background-size: 100%;
+}
+
+h1{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Titillium Web', sans-serif;
+    color: #fffffff5;
+}
+
+.cont-main{
+    margin: 0px 40px;
+    justify-content: center;
+    display: flex;
+}
+
+/* BUTTONS */
+
+.buttons{
+    width: 155px !important;
+    min-width: 155PX;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.btn-crip{
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    color: #000000bb;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 3px 13px;
+    border-radius: 15px;
+    border: 1px solid #000000bb;
+    background-color: #ffcc00;
+    cursor: pointer;
+}
+
+.btn-crip > i{
+    font-size: 20px;
+}
+
+.btn-crip:hover{
+    color: #ffcc00;
+    background-color: #000000bb;
+    border: 1px solid #ffffff33;
+    box-shadow: 0px 4px 9px 0px rgb(0 0 0 / 80%) ;
+}
+
+.btn-crip:active{
+    color: #000000bb;
+    background-color: #ffcc00;
+}
+
+.btn-copy{
+    border: 0px;
+    background-color: #ffcc0000;
+    cursor: pointer;
+}
+
+.btn-copy > i{
+    font-size: 25px;
+    color: #000000bf;
+}
+
+.btn-copy > i:hover{
+    color: #005aa1;
+}
+
+.btn-copy > i:active{
+    color: #000000bf;
+}
+
+/* TEXTAREA */
+
+.cont-texarea{
+    width: 100%;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.748);
+    border-radius: 7px;
+    border: 1px solid #828282c2;
+    
+}
+
+textarea{
+    width: 100%;
+    height: 300px;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Titillium Web', sans-serif;
+    background: none;
+    border: 0px;
+    overflow: auto;
+    resize: none;
+}
+
+textarea:focus{
+    outline: none !important;
+}
+
+/* MSJ ERROR */
+
+.msj-error{
+    padding: 5px 25px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Titillium Web', sans-serif;
+    background: #ff0000b9;
+    border: 1px solid #ff000091;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 800px) {
+    .cont-main {
+      flex-direction: column;
+      align-content: center;
+      margin: 0px 60px;
+    }
+
+    .buttons{
+        min-width: 100%;
+        flex-direction: row;
+        align-content: center;
+        margin: 15px 0px;
+        /* align-content: space-between; */
+    }
+
+    .btn-crip{
+        width: 45%;
+        font-size: 17px;
+        font-weight: 700;
+        padding: 3px 13px;
+    }
+    
+    .cont-texarea{
+        padding: 15px;  
+    }
+
+    textarea{
+        height: 200px;
+    }
+
+    .msj-error{
+        padding: 3px 10px;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 650;
+    } /* SE VE MAL */
+}
+
+/* Se ve mal los iconos del button */
+@media screen and (max-width: 450px) {
+    .btn-crip{
+        width: 50%;
+    }
+}
